@@ -22,8 +22,7 @@ def panic():
     
     # Ouverture du site de secours
     webbrowser.open("https://fr.wikipedia.org/wiki/Physique_quantique")
-
-# Déclencheur sur la touche F12
+    
 print("Script actif. Appuie sur F12 pour tout masquer.")
 with keyboard.GlobalHotKeys({'<f12>': panic}) as h:
     h.join()
